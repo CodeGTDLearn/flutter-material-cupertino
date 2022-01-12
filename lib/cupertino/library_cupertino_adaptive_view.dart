@@ -32,9 +32,9 @@ class LibraryCupertinoAdaptiveView extends StatelessWidget {
                   padding: const EdgeInsets.all(15.0),
                   child: Icon(CupertinoIcons.share, color: Colors.red)),
               Icon(Icons.adaptive.share, color: Colors.blue),
-              // Padding(
-              //     padding: const EdgeInsets.all(15.0),
-              //     child: Icon(Icons.share, color: Colors.black)),
+              Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Icon(Icons.share, color: Colors.black)),
               Padding(
                   padding: const EdgeInsets.all(15.0),
                   child: CupertinoActivityIndicator()),
