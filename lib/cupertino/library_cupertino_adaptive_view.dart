@@ -20,8 +20,8 @@ class LibraryCupertinoAdaptiveView extends StatelessWidget {
               Material(
                   child: Slider.adaptive(
                       value: 1, onChanged: (_) {}, activeColor: Colors.blue)),
-              // Material(
-              //     child: Slider(value: 1, onChanged: (_) {}, activeColor: Colors.black)),
+              Material(
+                  child: Slider(value: 1, onChanged: (_) {}, activeColor: Colors.black)),
               CupertinoSwitch(
                   activeColor: CupertinoColors.systemRed, value: true, onChanged: (_) {}),
               Switch.adaptive(activeColor: Colors.blue, value: true, onChanged: (_) {}),
