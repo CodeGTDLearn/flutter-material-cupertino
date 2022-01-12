@@ -16,7 +16,7 @@ class LibraryMaterialAdaptiveView extends StatelessWidget {
               CupertinoSlider(
                 value: 1,
                 onChanged: (_) {},
-                activeColor: CupertinoColors.systemRed,
+                activeColor: CupertinoColors.black,
               ),
               SwitchListTile(
                   title: const Text("Android"),
@@ -31,16 +31,24 @@ class LibraryMaterialAdaptiveView extends StatelessWidget {
               ),
               Switch(activeColor: Colors.red, value: true, onChanged: (_) {}),
               Switch.adaptive(activeColor: Colors.blue, value: true, onChanged: (_) {}),
+              CupertinoSwitch(
+                  activeColor: CupertinoColors.black, value: true, onChanged: (_) {}),
               Padding(
                 padding: const EdgeInsets.all(30.0),
                 child: Icon(Icons.share, color: Colors.red),
               ),
               Icon(Icons.adaptive.share, color: Colors.blue),
               Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Icon(CupertinoIcons.share, color: Colors.red)),
+              Padding(
                 padding: const EdgeInsets.all(30.0),
                 child: CircularProgressIndicator(backgroundColor: Colors.red),
               ),
-              CircularProgressIndicator.adaptive(backgroundColor: Colors.blue)
+              CircularProgressIndicator.adaptive(backgroundColor: Colors.blue),
+              Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: CupertinoActivityIndicator()),
             ],
           ),
         ),
