@@ -20,19 +20,31 @@ class LibraryCupertinoAdaptiveView extends StatelessWidget {
               Material(
                   child: Slider.adaptive(
                       value: 1, onChanged: (_) {}, activeColor: Colors.blue)),
+              Material(
+                  child: Slider(
+                      value: 1, onChanged: (_) {}, activeColor: Colors.black)),
               CupertinoSwitch(
                   activeColor: CupertinoColors.systemRed, value: true, onChanged: (_) {}),
               Switch.adaptive(activeColor: Colors.blue, value: true, onChanged: (_) {}),
+              Switch(activeColor: Colors.black, value: true, onChanged: (_) {}),
               Padding(
-                padding: const EdgeInsets.all(30.0),
+                padding: const EdgeInsets.all(15.0),
                 child: Icon(CupertinoIcons.share, color: Colors.red),
               ),
               Icon(Icons.adaptive.share, color: Colors.blue),
               Padding(
-                padding: const EdgeInsets.all(30.0),
+                padding: const EdgeInsets.all(15.0),
+                child: Icon(Icons.share, color: Colors.black),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(15.0),
                 child: CupertinoActivityIndicator(),
               ),
-              CircularProgressIndicator.adaptive(backgroundColor: Colors.blue)
+              CircularProgressIndicator.adaptive(backgroundColor: Colors.blue),
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: CircularProgressIndicator(backgroundColor: Colors.black),
+              )
             ],
           ),
         ),
