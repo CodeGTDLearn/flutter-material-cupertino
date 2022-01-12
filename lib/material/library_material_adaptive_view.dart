@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class LibraryMaterialAdaptiveView extends StatelessWidget {
@@ -12,6 +13,11 @@ class LibraryMaterialAdaptiveView extends StatelessWidget {
             children: [
               Slider(value: 1, onChanged: (_) {}, activeColor: Colors.red),
               Slider.adaptive(value: 1, onChanged: (_) {}, activeColor: Colors.blue),
+              CupertinoSlider(
+                value: 1,
+                onChanged: (_) {},
+                activeColor: CupertinoColors.systemRed,
+              ),
               SwitchListTile(
                   title: const Text("Android"),
                   value: true,
