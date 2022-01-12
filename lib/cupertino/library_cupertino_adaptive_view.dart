@@ -5,7 +5,8 @@ class LibraryCupertinoAdaptiveView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
-      navigationBar: const CupertinoNavigationBar(middle: Text("Found: Cupertino + Adaptive")),
+      navigationBar:
+          const CupertinoNavigationBar(middle: Text("Found: Cupertino + Adaptive")),
       child: Center(
         child: SingleChildScrollView(
           child: Column(
@@ -16,8 +17,11 @@ class LibraryCupertinoAdaptiveView extends StatelessWidget {
                 onChanged: (_) {},
                 activeColor: CupertinoColors.systemRed,
               ),
-              Slider.adaptive(value: 1, onChanged: (_) {}, activeColor: Colors.blue),
-              CupertinoSwitch(activeColor: CupertinoColors.systemRed, value: true, onChanged: (_) {}),
+              Material(
+                  child: Slider.adaptive(
+                      value: 1, onChanged: (_) {}, activeColor: Colors.blue)),
+              CupertinoSwitch(
+                  activeColor: CupertinoColors.systemRed, value: true, onChanged: (_) {}),
               Switch.adaptive(activeColor: Colors.blue, value: true, onChanged: (_) {}),
               Padding(
                 padding: const EdgeInsets.all(30.0),
