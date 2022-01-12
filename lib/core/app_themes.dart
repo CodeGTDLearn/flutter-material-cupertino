@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 class AppThemes {
   CupertinoThemeData cupertinoTheme() {
+
     return CupertinoThemeData(
         textTheme: CupertinoTextThemeData(
             navLargeTitleTextStyle: TextStyle(
