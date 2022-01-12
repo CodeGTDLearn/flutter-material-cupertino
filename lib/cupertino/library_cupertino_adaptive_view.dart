@@ -25,7 +25,9 @@ class LibraryCupertinoAdaptiveView extends StatelessWidget {
               CupertinoSwitch(
                   activeColor: CupertinoColors.systemRed, value: true, onChanged: (_) {}),
               Switch.adaptive(activeColor: Colors.blue, value: true, onChanged: (_) {}),
-              Switch(activeColor: Colors.black, value: true, onChanged: (_) {}),
+              Material(
+                  child:
+                      Switch(activeColor: Colors.black, value: true, onChanged: (_) {})),
               Padding(
                   padding: const EdgeInsets.all(15.0),
                   child: Icon(CupertinoIcons.share, color: Colors.red)),
