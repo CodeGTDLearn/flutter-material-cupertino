@@ -42,6 +42,7 @@ class LibraryCupertinoAdaptiveView extends StatelessWidget {
               Padding(
                   padding: const EdgeInsets.all(15.0),
                   child: CircularProgressIndicator(backgroundColor: Colors.black)),
+              // ULTIMA ALTERACAO.....
             ],
           ),
         ),
